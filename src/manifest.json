@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Check ByProxy",
+  "description": "Check ByProxy, Pop Show RemoteIp",
+  "version": "1.0",
+
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+
+  "browser_action": {
+    "default_icon": "icon_gray.png",
+    "default_title": "Show RemoteIp",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "webRequest", "\u003Call_urls>", "tabs"
+  ]
+}
