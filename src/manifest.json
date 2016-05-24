@@ -3,7 +3,7 @@
 
   "name": "Check ByProxy",
   "description": "Check ByProxy, Pop Show RemoteIp",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "background": {
     "scripts": [ "background.js" ]
