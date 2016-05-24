@@ -13,7 +13,7 @@ function set_badge(ip) {
 }
 
 function update_current_tab () {
-	chrome.tabs.query({active: true}, function (tabs) {
+	chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
 		var tab = tabs[0];
 		if (tab && tab.url && (tab.url.length > 0)) {
 			set_badge(localStorage.getItem(parse_url(tab.url)));
